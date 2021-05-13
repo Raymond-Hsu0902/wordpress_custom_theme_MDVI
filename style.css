@@ -1,0 +1,346 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("wp-content\themes\customtheme\fonts\Roboto-Regular.woff")
+      format("woff"),
+    url("wp-content\themes\customtheme\fonts\Roboto-Regular.ttf")
+      format("truetype"),
+    url("wp-content\themes\customtheme\fonts\Roboto-Regular.eot")
+      format("embedded-opentype");
+}
+
+.navbar-nav li {
+  font-size: 20px;
+}
+
+a {
+  color: #42444a;
+}
+
+.slogan {
+  margin-bottom: 35px;
+}
+
+.slide {
+  position: relative;
+}
+.slide-text {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  right: 15%;
+  bottom: 0;
+}
+p {
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  color: #42444a;
+  font-family: Roboto;
+}
+.slide-img {
+  position: absolute;
+  top: 2%;
+  right: 4%;
+  z-index: 1;
+}
+.slide_photo {
+  clip-path: circle(40% at 40% 50%);
+  width: 110%;
+}
+.slidephoto_colorvector {
+  position: absolute;
+  z-index: 0;
+  top: 36%;
+  left: 61%;
+}
+.slide-secondary-text {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  top: 75%;
+}
+.photo-radius {
+  border-radius: 50px;
+}
+.slide-circle {
+  position: absolute;
+  bottom: 3rem;
+  left: -7rem;
+  width: 32%;
+  z-index: -1;
+}
+/*second*/
+.slide-text2 {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  right: 15%;
+}
+
+.cardimg-custom {
+  width: 70%;
+}
+.card-slide {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card-bg {
+  margin-top: 8rem;
+}
+.help-title {
+  position: absolute;
+  top: -5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.slide-footer {
+  background-color: #ddbb9f;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.footer-text {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+.footer-icon img:nth-child(1) {
+  width: 48px;
+  margin-left: 0;
+}
+.footer-icon img {
+  width: 48px;
+  margin: 0 2rem;
+}
+
+.contact-info p {
+  margin-bottom: 0;
+}
+
+.footer {
+  background: #ddbb9f;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#anim {
+  max-width: 400px;
+  margin: auto;
+}
+/*選單控制*/
+
+.page-wrap {
+  margin-top: 2rem, 0;
+}
+
+header .top-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header .top-bar li a {
+  padding: 0.25rem 1rem;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+header .top-bar li:first-child a {
+  padding-left: 0;
+}
+header .top-bar li:last-child a {
+  padding-right: 0;
+}
+
+header .top-bar li {
+  position: relative;
+}
+
+header .top-bar li .sub-menu {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 200px;
+  border-radius: 5rem;
+}
+header .top-bar li .sub-menu a {
+  color: red;
+  padding: 0.25rem;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+header .top-bar .menu-item-has-children:hover > .sub-menu {
+  display: block;
+}
+
+header .top-bar > .sub-menu > li > .menu-item-has-children:hover > .sub-menu {
+  display: block;
+}
+
+header .top-bar .sub-menu li .sub-menu {
+  left: 100%;
+  top: 0;
+}
+
+/*bootstrap navbar*/
+ul.dropdown-menu li > ul.dropdown-menu {
+  left: 100%;
+  top: 0;
+}
+
+ul.dropdown-menu li:hover > ul.dropdown-menu,
+ul.dropdown-menu li:focus > ul.dropdown-menu {
+  display: block;
+}
+
+/*RWD控制*/
+@media screen and (max-width: 1100px) {
+  h3,
+  p {
+    font-size: 20px;
+  }
+  h1,
+  h2 {
+    font-size: 28px;
+  }
+  .help-title {
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .cardimg-custom {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 992px) {
+  p {
+    font-size: 16px;
+  }
+  h1,
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .help-title {
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .cardimg-custom {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-slide {
+    position: relative;
+    top: 0;
+  }
+  .footer-icon img {
+    width: 48px;
+    margin: 0 1rem;
+  }
+  #card_bg {
+    display: none;
+  }
+  .help-title {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .card-bg {
+    margin-top: 0rem;
+  }
+
+  .bg-section {
+    position: relative;
+  }
+  .bg-section-img {
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    top: 35%;
+    z-index: -1;
+  }
+  .CTA-section {
+    position: relative;
+  }
+  .CTA-section-text {
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .CTA-section-text2 {
+    position: absolute;
+    width: 100%;
+    bottom: 20%;
+    z-index: 1;
+  }
+  .RWD-footer-icon img {
+    width: 32px;
+    margin: 0 1rem;
+  }
+  .RWD-footer-icon img:nth-child(1) {
+    width: 32px;
+    margin-left: 0;
+  }
+}
